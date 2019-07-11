@@ -1,0 +1,42 @@
+[
+    {
+        "message": "Hello!",
+        "sender": "Juan Carlos",
+        "sender_id": 100001,
+        "sender_img": "https://cdn.myanimelist.net/images/characters/2/363561.jpg",
+        "date": "2019-07-10T16:00:01Z",
+        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "Whats up!",
+        "sender": "Lelouch Lamperouge",
+        "sender_id": 100002,
+        "sender_img": "https://cdn.myanimelist.net/images/characters/8/277129.jpg",
+        "date": "2019-07-10T16:00:02Z",
+        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "Let's play some Dota",
+        "sender": "Juan Carlos",
+        "sender_id": 100001,
+        "sender_img": "https://cdn.myanimelist.net/images/characters/2/363561.jpg",
+        "date": "2019-07-10T16:00:03Z",
+        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "Come join our party",
+        "sender": "Juan Carlos",
+        "sender_id": 100001,
+        "sender_img": "https://cdn.myanimelist.net/images/characters/2/363561.jpg",
+        "date": "2019-07-10T16:00:04Z",
+        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "Sure!",
+        "sender": "Lelouch Lamperouge",
+        "sender_id": 100002,
+        "sender_img": "https://cdn.myanimelist.net/images/characters/8/277129.jpg",
+        "date": "2019-07-10T16:00:02Z",
+        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+    }
+]

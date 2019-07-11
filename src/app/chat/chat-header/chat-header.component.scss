@@ -1,0 +1,17 @@
+.chat-header {
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: solid var(--borderColor) 1px;
+    height: 60px;
+}
+
+.title {
+    font-size: 1.1rem;
+}
+
+.active_status {
+    font-size: 0.7rem;
+    color: var(--subtleColor);
+    text-transform: uppercase;
+    font-weight: 500;
+}

@@ -1,0 +1,19 @@
+<section 
+    class="chat-main"
+    fxLayout="column"
+    fxLayoutAlign="start stretch"
+>
+    <app-chat-header
+    title="Daryl Clarino"
+    status="Last Active: 5 hours ago"
+    ></app-chat-header>
+    <app-chat-content fxFlex>
+        <app-chat-bubble 
+        *ngFor="let m of messages"
+        [chatMessage]="m"
+        >
+        </app-chat-bubble>
+    </app-chat-content>
+
+    <app-chat-actions (chatMessage)="sendChat($event)"></app-chat-actions>
+</section>

@@ -1,0 +1,6 @@
+<div fxLayout="row" fxLayoutAlign="start end">
+    <img [src]="chatMessage.sender_img" *ngIf="showImg | async" [title]="chatMessage.sender">
+    <span #messageContent class="message-content">
+        {{ chatMessage.message }}
+    </span>
+</div>

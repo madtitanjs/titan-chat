@@ -1,0 +1,25 @@
+:host {
+    background: white;
+}
+.chat-actions {
+    border-top: solid var(--borderColor) 1px;
+    min-height: 60px;
+    padding: var(--verPadding) var(--sidePadding);
+}
+
+.message_input {
+    box-sizing: border-box;
+    font-size: var(--typoBody);
+    border: solid var(--borderColor) 1px;
+    padding: 10px 20px;
+    min-height: 40px;
+    border-radius: 20px;
+    caret-color: var(--primaryColor);
+    &:focus {
+        outline: none;
+    }
+}
+
+.send-icon {
+    color: var(--primaryColor);
+}
