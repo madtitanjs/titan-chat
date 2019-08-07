@@ -14,9 +14,16 @@
     padding: 10px 20px;
     min-height: 40px;
     border-radius: 20px;
-    caret-color: var(--primaryColor);
-    &:focus {
-        outline: none;
+
+    textarea {
+        border:none;
+        width: 100%;
+
+        caret-color: var(--primaryColor);
+        &:focus {
+            outline: none;
+        }
+        font-family: var(--fontFamily)
     }
 }
 

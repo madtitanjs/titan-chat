@@ -1,0 +1,14 @@
+:host {
+  position: relative;
+  width: 300px;
+  .contact {
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  .compose {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}

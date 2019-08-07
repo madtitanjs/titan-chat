@@ -13,7 +13,7 @@ export class ChatApiService {
   getChatMessages(channelId: string) {
     return this.httpClient.get<ChatMessage[]>('/mock/messages.json')
       .pipe(
-        map(messages => messages.filter(m => m.channel === channelId))
+        map((messages: ChatMessage[]) => messages.filter(m => m.channel === channelId))
       );
   }
 }

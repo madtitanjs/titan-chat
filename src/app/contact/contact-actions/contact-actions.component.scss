@@ -1,0 +1,15 @@
+:host {
+    width: 100%;
+    margin: 10px 0;
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}

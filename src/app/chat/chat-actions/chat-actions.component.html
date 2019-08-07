@@ -3,17 +3,20 @@ class="chat-actions"
 fxLayout="row"
 fxLayoutAlign="start end"
 >
+  <div 
+  fxFlex
+  class="message_input">
     <textarea 
     #messageInput
     matInput
     autofocus
-    class="message_input"
     placeholder="Type a message.." 
     cdkTextareaAutosize
     #autosize="cdkTextareaAutosize"
     cdkAutosizeMinRows="1"
     cdkAutosizeMaxRows="3"
-    fxFlex></textarea>
+    ></textarea>
+  </div>
     <button mat-icon-button (click)="emitMessage()">
         <mat-icon class="send-icon">send</mat-icon>
     </button>

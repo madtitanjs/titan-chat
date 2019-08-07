@@ -31,6 +31,7 @@ export class ChatActionsComponent implements OnInit {
   emitMessage() {
     const textArea: HTMLTextAreaElement = this.messageInput.nativeElement;
     const message = textArea.value;
+    if(/^\s*$/.test(message)) return;
     textArea.value = '';
     const chatMessage: ChatMessage = {
       message,

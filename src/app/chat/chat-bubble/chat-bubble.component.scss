@@ -8,6 +8,10 @@
     }
     margin-bottom: 10px;
     max-width: calc(70%);
+
+    &:first-child {
+        margin-top: 10px;
+    }
 }
 .message-content {
     padding: 10px;
