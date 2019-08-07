@@ -12,7 +12,7 @@ export class ChatActionsComponent implements OnInit {
   @ViewChild('messageInput', { static: true }) messageInput: ElementRef;
   @Output() chatMessage = new EventEmitter<ChatMessage>();
 
-  constructor(private viewRef: ViewContainerRef) { }
+  constructor() { }
 
   ngOnInit() {
     this.setupInput();
@@ -26,6 +26,10 @@ export class ChatActionsComponent implements OnInit {
         this.emitMessage();
       }
     };
+  }
+
+  isValidText(value: string): boolean {
+    return /^\s*$/.test(value)
   }
 
   emitMessage() {

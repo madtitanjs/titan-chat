@@ -17,7 +17,7 @@ fxLayoutAlign="start end"
     cdkAutosizeMaxRows="3"
     ></textarea>
   </div>
-    <button mat-icon-button (click)="emitMessage()">
+    <button mat-icon-button (click)="emitMessage()" [disabled]="isValidText(messageInput.value)">
         <mat-icon class="send-icon">send</mat-icon>
     </button>
 </div>

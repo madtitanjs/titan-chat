@@ -1,8 +1,14 @@
-.chat-container {
-    overflow-y: auto;
-    height: 100%;
-    max-height: calc(100vh - 77px - 65px);
-    .chat-content {
-        width:100%;
+:host {
+    position: relative;
+    .chat-container {
+        position: absolute;
+        overflow-y: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        .chat-content {
+            width:100%;
+        }
     }
 }

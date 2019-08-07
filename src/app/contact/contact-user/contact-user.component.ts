@@ -13,12 +13,14 @@ export class ContactUserComponent implements OnInit {
   userImg = "";
   userName = "";
   userLatestMessage = "";
-  userLatestMessageDate = Date.now()
+  userLatestMessageDate = new Date(Date.now() - 500000);
+  userId = "";
   constructor() { }
 
   ngOnInit() {
     this.userImg = this.user.img;
     this.userName = this.user.name;
+    this.userId = this.user.id;
     this.userLatestMessage = "Lorem ipsum dolor sit amet, ridens comprehensam mei in. Eu cetero accumsan nec, cu suas viris verear his, dolorum contentiones pro in. Eum et alterum pertinax senserit, vis sententiae scribentur signiferumque eu. Sea tota assentior definiebas in, mea facer augue ea."
   }
 

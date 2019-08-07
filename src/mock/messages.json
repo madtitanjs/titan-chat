@@ -5,7 +5,7 @@
         "sender_id": "ed28b13e-cd1e-4354-a428-ff805dabef8a",
         "sender_img": "https://cdn.myanimelist.net/images/characters/2/363561.jpg",
         "date": "2019-07-10T16:00:01Z",
-        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+        "channel": "xk28b13e-cd1e-4354-a428-ff805dabef8a"
     },
     {
         "message": "Whats up!",
@@ -13,7 +13,7 @@
         "sender_id": "xk28b13e-cd1e-4354-a428-ff805dabef8a",
         "sender_img": "https://cdn.myanimelist.net/images/characters/8/277129.jpg",
         "date": "2019-07-10T16:00:02Z",
-        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+        "channel": "xk28b13e-cd1e-4354-a428-ff805dabef8a"
     },
     {
         "message": "Let's play some Dota",
@@ -21,7 +21,7 @@
         "sender_id": "ed28b13e-cd1e-4354-a428-ff805dabef8a",
         "sender_img": "https://cdn.myanimelist.net/images/characters/2/363561.jpg",
         "date": "2019-07-10T16:00:03Z",
-        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+        "channel": "xk28b13e-cd1e-4354-a428-ff805dabef8a"
     },
     {
         "message": "Come join our party",
@@ -29,7 +29,7 @@
         "sender_id": "ed28b13e-cd1e-4354-a428-ff805dabef8a",
         "sender_img": "https://cdn.myanimelist.net/images/characters/2/363561.jpg",
         "date": "2019-07-10T16:00:04Z",
-        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+        "channel": "xk28b13e-cd1e-4354-a428-ff805dabef8a"
     },
     {
         "message": "Sure!",
@@ -37,6 +37,57 @@
         "sender_id": "xk28b13e-cd1e-4354-a428-ff805dabef8a",
         "sender_img": "https://cdn.myanimelist.net/images/characters/8/277129.jpg",
         "date": "2019-07-10T16:00:02Z",
-        "channel": "cb28b13e-cd1e-4354-a428-ff805dabef8a"
+        "channel": "xk28b13e-cd1e-4354-a428-ff805dabef8a"
+    },
+
+
+
+    {
+        "message": "Hi baby!",
+        "sender": "Bea Alonzo",
+        "sender_id": "ffsue13e-cd1e-4354-a428-ff805dabef8a",
+        "sender_img": "https://philnews.ph/wp-content/uploads/2019/08/bea-alonzo.jpg",
+        "date": "2019-07-10T16:00:01Z",
+        "channel": "ffsue13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "Let's play some Dota",
+        "sender": "Juan Carlos",
+        "sender_id": "ed28b13e-cd1e-4354-a428-ff805dabef8a",
+        "sender_img": "https://cdn.myanimelist.net/images/characters/2/363561.jpg",
+        "date": "2019-07-10T16:00:03Z",
+        "channel": "ffsue13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "kumain kana po?!",
+        "sender": "Bea Alonzo",
+        "sender_id": "ffsue13e-cd1e-4354-a428-ff805dabef8a",
+        "sender_img": "https://philnews.ph/wp-content/uploads/2019/08/bea-alonzo.jpg",
+        "date": "2019-07-10T16:00:04Z",
+        "channel": "ffsue13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "Magpabusog po!",
+        "sender": "Bea Alonzo",
+        "sender_id": "ffsue13e-cd1e-4354-a428-ff805dabef8a",
+        "sender_img": "https://philnews.ph/wp-content/uploads/2019/08/bea-alonzo.jpg",
+        "date": "2019-07-10T16:00:05Z",
+        "channel": "ffsue13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "gusto mo nang icecream? padalhan kita!",
+        "sender": "Bea Alonzo",
+        "sender_id": "ffsue13e-cd1e-4354-a428-ff805dabef8a",
+        "sender_img": "https://philnews.ph/wp-content/uploads/2019/08/bea-alonzo.jpg",
+        "date": "2019-07-10T16:00:06Z",
+        "channel": "ffsue13e-cd1e-4354-a428-ff805dabef8a"
+    },
+    {
+        "message": "palms sweaty, knees weak arms are heavy. there's vomit on his sweater already mom's spagheti",
+        "sender": "Bea Alonzo",
+        "sender_id": "ffsue13e-cd1e-4354-a428-ff805dabef8a",
+        "sender_img": "https://philnews.ph/wp-content/uploads/2019/08/bea-alonzo.jpg",
+        "date": "2019-07-10T16:00:07Z",
+        "channel": "ffsue13e-cd1e-4354-a428-ff805dabef8a"
     }
 ]

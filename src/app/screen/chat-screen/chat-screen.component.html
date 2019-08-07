@@ -4,8 +4,8 @@
     fxLayoutAlign="start stretch"
 >
     <app-chat-header
-    title="Daryl Clarino"
-    status="Last Active: 5 hours ago"
+    [title]="channelTitle"
+    [status]="channelStatus"
     ></app-chat-header>
     <app-chat-content fxFlex>
         <app-chat-bubble 

@@ -1,7 +1,50 @@
-img {
+.contact-user {
+  height: 50px;
+  max-height: 50px;
+  padding: 0 10px;
+  cursor: pointer;
+
+  &:focus {
+      outline: none;
+  }
+  &.active {
+    background: #efefef;
+    border-radius: 10px;
+  }
+  img {
+    margin: auto;
     width: 40px;
     height: 40px;
     border-radius: 20px;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+
+  .preview_main_flex {
+    max-height: 100%;
+  }
+  .preview_container {
+    .preview_name {
+      font-size: 15px;
+    }
+    .preview_message_container {
+      overflow: hidden;
+      color: var(--subtleColor);
+      font-size: 13px;
+      .preview_message_abs_container {
+        position: relative;
+        overflow: hidden;
+        .preview {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          max-width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
 }

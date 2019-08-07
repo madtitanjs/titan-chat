@@ -27,6 +27,15 @@
     }
 }
 
-.send-icon {
-    color: var(--primaryColor);
+
+
+button {
+    .send-icon {
+        color: var(--primaryColor);
+    }
+    &:disabled {
+        .send-icon {
+            color: var(--subtleColor)
+        }
+    }
 }

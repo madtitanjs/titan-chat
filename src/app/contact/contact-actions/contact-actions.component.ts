@@ -18,9 +18,7 @@ export class ContactActionsComponent implements OnInit {
   }
 
   async getContacts() {
-    var contacts = await this.userService.getContacts().toPromise();
-    var user = contacts.find(s => s.id === mockUserId);
-    console.log(user);
+    var user = await this.userService.getCurrentUser().toPromise();
     if(typeof user != 'undefined') {
       this.userImg = user.img;
     }

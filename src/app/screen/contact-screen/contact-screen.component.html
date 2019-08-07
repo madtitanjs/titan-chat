@@ -1,6 +1,8 @@
 <div fxLayout="column" class="contact">
-    <app-contact-actions></app-contact-actions>
-    <div fxFlex style="overflow-y: scroll; padding: 20px">
+    <div style="margin: 10px 10px;">
+        <app-contact-actions></app-contact-actions>
+    </div>
+    <div fxFlex style="overflow-y: auto; padding: 0 5px">
         <ng-container *ngFor="let contact of contacts">
             <app-contact-user [user]="contact"></app-contact-user>
         </ng-container>

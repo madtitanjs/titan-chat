@@ -4,7 +4,8 @@ import { MainComponent } from './main/main.component';
 
 
 const routes: Routes = [
-  { path: '', component: MainComponent }
+  { path: '', component: MainComponent },
+  { path: 'c/:channel_id', component: MainComponent}
 ];
 
 @NgModule({

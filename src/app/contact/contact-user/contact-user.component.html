@@ -1,10 +1,19 @@
-<div>
+<div 
+fxLayout="row" 
+fxLayoutAlign="start center" 
+fxLayoutGap="10px"
+class="contact-user"
+[routerLink]="'/c/' + userId"
+routerLinkActive="active"
+>
     <img [src]="userImg">
-    <div>
-        <span>{{userName}}</span>
-        <div>
-            <span>{{userLatestMessage}}</span>
-            <span>{{userLatestMessageDate}}</span>
+    <div fxFlex class="preview_main_flex">
+        <div fxLayout="column" class="preview_container">
+            <span class="preview_name">{{userName}}</span>
+            <div fxLayout="row" fxLayoutGap="10px" class="preview_message_container">
+                <div fxFlex class="preview_message_abs_container"><span class="preview">{{userLatestMessage}}</span></div>
+                <span class="preview_date">{{userLatestMessageDate | previewDate}}</span>
+            </div>
         </div>
     </div>
 </div>
