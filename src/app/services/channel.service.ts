@@ -11,6 +11,6 @@ export class ChannelService {
   constructor(private httpClient: HttpClient) { }
 
   getChannelDetailsByChannelId(channelId: string) {
-    return this.httpClient.get<Channel[]>('/mock/channels.json').pipe(map(ch => ch.find(c => c.channel === channelId)));
+    return this.httpClient.get<Channel[]>('./mock/channels.json').pipe(map(ch => ch.find(c => c.channel === channelId)));
   }
 }

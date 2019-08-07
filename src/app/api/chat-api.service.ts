@@ -11,7 +11,7 @@ export class ChatApiService {
   constructor(private httpClient: HttpClient) { }
 
   getChatMessages(channelId: string) {
-    return this.httpClient.get<ChatMessage[]>('/mock/messages.json')
+    return this.httpClient.get<ChatMessage[]>('./mock/messages.json')
       .pipe(
         map((messages: ChatMessage[]) => messages.filter(m => m.channel === channelId))
       );
