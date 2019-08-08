@@ -9,13 +9,16 @@ import { ChatActionsComponent } from './chat-actions/chat-actions.component';
 import { ChatContentComponent } from './chat-content/chat-content.component';
 import { ChatBubbleComponent } from './chat-bubble/chat-bubble.component';
 
-import { MatButtonModule, MatIconModule, MatInputModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatInputModule, MatChipsModule, MatFormFieldModule, MatAutocompleteModule } from '@angular/material';
+import { ChatSearchComponent } from './chat-search/chat-search.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     ChatHeaderComponent,
     ChatActionsComponent,
     ChatContentComponent,
     ChatBubbleComponent,
+    ChatSearchComponent,
   ],
   imports: [
     CommonModule,
@@ -23,12 +26,18 @@ import { MatButtonModule, MatIconModule, MatInputModule } from '@angular/materia
     MatButtonModule,
     MatIconModule,
     MatInputModule,
+    MatChipsModule,
+    MatFormFieldModule,
+    MatAutocompleteModule,
+    FormsModule,
+    ReactiveFormsModule,
     ApiModule
   ],
   exports: [
     ChatHeaderComponent,
     ChatActionsComponent,
     ChatContentComponent,
+    ChatSearchComponent,
     ChatBubbleComponent
   ],
   providers: [

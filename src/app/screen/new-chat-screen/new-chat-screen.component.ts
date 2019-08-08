@@ -6,11 +6,11 @@ import { ChatMessage } from 'src/interfaces/chatmessage';
 import { ActivatedRoute } from '@angular/router';
 import { ChannelService } from 'src/app/services/channel.service';
 @Component({
-  selector: 'app-chat-screen',
-  templateUrl: './chat-screen.component.html',
-  styleUrls: ['./chat-screen.component.scss']
+  selector: 'app-new-chat-screen',
+  templateUrl: './new-chat-screen.component.html',
+  styleUrls: ['./new-chat-screen.component.scss']
 })
-export class ChatScreenComponent implements OnInit {
+export class NewChatScreenComponent implements OnInit {
   // variables
   messages: ChatMessage[] = [];
   channelTitle = "";
@@ -21,11 +21,7 @@ export class ChatScreenComponent implements OnInit {
     private acr: ActivatedRoute) { }
 
   ngOnInit() {
-    this.acr.params.subscribe(val => {
-      this.messages.length = 0;
-      this.getChatData(val.channel_id);
-      this.updateChannel(val.channel_id);
-    })
+console.log('new')
     
   }
 
@@ -53,7 +49,7 @@ export class ChatScreenComponent implements OnInit {
         ref.setHours(0,0,0,0);
         comp.setHours(0,0,0,0);
         let dayDiff = (diff) / (1000 * 60 * 60 * 24);
-        this.channelStatus = `Active ${Math.floor(dayDiff)}d ago`
+        this.channelStatus = `Active ${dayDiff}d ago`
       }
       
     }

@@ -1,0 +1,16 @@
+<section 
+    class="chat-main"
+    fxLayout="column"
+    fxLayoutAlign="start stretch"
+>
+    <app-chat-search></app-chat-search>
+    <app-chat-content fxFlex>
+        <app-chat-bubble 
+        *ngFor="let m of messages"
+        [chatMessage]="m"
+        >
+        </app-chat-bubble>
+    </app-chat-content>
+
+    <app-chat-actions (chatMessage)="sendChat($event)"></app-chat-actions>
+</section>
