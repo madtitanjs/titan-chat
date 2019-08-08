@@ -8,9 +8,10 @@ import { MainComponent } from './main/main.component';
 import { ContactScreenComponent } from './contact-screen/contact-screen.component';
 import { ContactModule } from '../contact/contact.module';
 import { MatButtonModule, MatIconModule } from '@angular/material';
+import { NewChatScreenComponent } from './new-chat-screen/new-chat-screen.component';
 
 @NgModule({
-  declarations: [ChatScreenComponent, MainComponent, ContactScreenComponent],
+  declarations: [ChatScreenComponent, MainComponent, ContactScreenComponent, NewChatScreenComponent],
   imports: [
     ChatModule,
     CommonModule,

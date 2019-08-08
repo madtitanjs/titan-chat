@@ -1,9 +1,8 @@
-<div
-class="main"
-fxLayout="row"
-fxLayoutAlign="start stretch"
->
-    <app-chat-screen fxFlex style="border-right: solid var(--borderColor) 1px;"></app-chat-screen>
+<div class="main" fxLayout="row" fxLayoutAlign="start stretch">
+    <div fxFlex style="border-right: solid var(--borderColor) 1px;">
+        <router-outlet>
+        </router-outlet>
+    </div>
     <div style="width: 300px; resize: horizontal">
         <app-contact-screen></app-contact-screen>
     </div>
