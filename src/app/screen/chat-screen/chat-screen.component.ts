@@ -1,10 +1,9 @@
-import { ChatDataService } from './../../chat/chat-data.service';
 import { Component, OnInit } from '@angular/core';
 import { mockChannel, mockUserId } from '../../../configuration/constants';
-import { Observable, BehaviorSubject } from 'rxjs';
 import { ChatMessage } from 'src/interfaces/chatmessage';
 import { ActivatedRoute } from '@angular/router';
 import { ChannelService } from 'src/app/services/channel.service';
+import { MessageService } from 'src/app/services/message.service';
 @Component({
   selector: 'app-chat-screen',
   templateUrl: './chat-screen.component.html',
@@ -17,7 +16,7 @@ export class ChatScreenComponent implements OnInit {
   channelStatus = "";
   constructor(
     private channelService: ChannelService,
-    private chatData: ChatDataService, 
+    private messageService: MessageService, 
     private acr: ActivatedRoute) { }
 
   ngOnInit() {
@@ -63,7 +62,7 @@ export class ChatScreenComponent implements OnInit {
   removeChatBubble() {}
 
   getChatData(channelId: string) {
-    this.chatData.getMessagesByChannelId(channelId).subscribe(val => {
+    this.messageService.getChatMessages(channelId).subscribe(val => {
       val.forEach(s => {
         s.self = s.sender_id === mockUserId;
       });

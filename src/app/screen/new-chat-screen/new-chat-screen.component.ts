@@ -1,11 +1,10 @@
-import { ChatDataService } from './../../chat/chat-data.service';
 import { Component, OnInit } from '@angular/core';
 import { mockChannel, mockUserId } from '../../../configuration/constants';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { ChatMessage } from 'src/interfaces/chatmessage';
-import { ActivatedRoute } from '@angular/router';
 import { ChannelService } from 'src/app/services/channel.service';
 import { Location } from '@angular/common';
+import { MessageService } from 'src/app/services/message.service';
 @Component({
   selector: 'app-new-chat-screen',
   templateUrl: './new-chat-screen.component.html',
@@ -18,7 +17,7 @@ export class NewChatScreenComponent implements OnInit {
   channelStatus = "";
   constructor(
     private channelService: ChannelService,
-    private chatData: ChatDataService, 
+    private messageService: MessageService, 
     private loc: Location) { }
 
   ngOnInit() {
@@ -63,7 +62,7 @@ console.log('new')
   removeChatBubble() {}
 
   getChatData(channelId: string) {
-    this.chatData.getMessagesByChannelId(channelId).subscribe(val => {
+    this.messageService.getChatMessages(channelId).subscribe(val => {
       val.forEach(s => {
         s.self = s.sender_id === mockUserId;
       });
