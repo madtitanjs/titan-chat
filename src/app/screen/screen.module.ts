@@ -7,19 +7,23 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MainComponent } from './main/main.component';
 import { ContactScreenComponent } from './contact-screen/contact-screen.component';
 import { ContactModule } from '../contact/contact.module';
-import { MatButtonModule, MatIconModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatDialogModule } from '@angular/material';
 import { NewChatScreenComponent } from './new-chat-screen/new-chat-screen.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { DialogsModule } from '../dialogs/dialogs.module';
 
 @NgModule({
-  declarations: [ChatScreenComponent, MainComponent, ContactScreenComponent, NewChatScreenComponent],
+  declarations: [ChatScreenComponent, MainComponent, ContactScreenComponent, NewChatScreenComponent, NotFoundComponent],
   imports: [
     ChatModule,
     CommonModule,
+    DialogsModule,
     ScreenRoutingModule,
     FlexLayoutModule,
     ContactModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
   ],
   exports: [
     ChatScreenComponent,

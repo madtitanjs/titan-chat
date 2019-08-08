@@ -1,43 +1,37 @@
-<div 
-class="chat-search" 
-fxLayout="row" 
-fxLayoutAlign="start center" 
-fxLayoutGap="5px">
-<button mat-icon-button color="primary">
-    <mat-icon>arrow_back</mat-icon>
-</button>
- <h3>New Message</h3>
- <mat-form-field fxFlex>
-     <mat-chip-list #chips>
-         <mat-chip
-         *ngFor="let contact of selectedContacts"
-         [selectable]="true"
-         [removable]="true"
-         (removed)="remove(contact)"
-         >
-        {{ contact.name }}
-        <mat-icon matChipRemove>cancel</mat-icon>
-        </mat-chip>
-     </mat-chip-list>
-     <input 
-     #contactInput
-     placeholder="Type a name"
-     [formControl]="searchControl"
-     [matAutocomplete]="auto"
-     [matChipInputFor]="chips"
-     [matChipInputAddOnBlur]="true"
-     [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-     (matChipInputTokenEnd)="add($event)"
-     >
-     <mat-autocomplete
-     #auto="matAutocomplete"
-     (optionSelected)="selected($event)"
-     >
-         <mat-option
-         *ngFor="let contact of filteredContacts | async" [value]="contact"
-         >
-        {{contact.name}}
-        </mat-option>
-     </mat-autocomplete>
- </mat-form-field>
+<div class="chat-search" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+    <button mat-icon-button color="primary" (click)="back.emit()">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <div fxFlex>
+        <mat-form-field class="chip-list" floatLabel='never'>
+            <mat-chip-list #chipList aria-label="Fruit selection">
+              <mat-chip
+                *ngFor="let con of selectedContacts"
+                [selectable]="true"
+                [removable]="true"
+                (removed)="remove(con)">
+                {{con.name}}
+                <mat-icon matChipRemove>cancel</mat-icon>
+              </mat-chip>
+              <input
+                matInput
+                #fruitInput
+                placeholder="Type the name of a person or group"
+                [formControl]="searchControl"
+                [matAutocomplete]="auto"
+                [matChipInputFor]="chipList"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                [matChipInputAddOnBlur]="true"
+                (matChipInputTokenEnd)="add($event)">
+
+            </mat-chip-list>
+
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+              <mat-option *ngFor="let con of filteredContacts | async" [value]="con">
+                {{con.name}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+    </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 import { User } from 'src/interfaces/user';
 import { Observable, BehaviorSubject } from 'rxjs';
@@ -13,7 +13,7 @@ import {COMMA, ENTER} from '@angular/cdk/keycodes';
   styleUrls: ['./chat-search.component.scss']
 })
 export class ChatSearchComponent implements OnInit {
-
+  @Output() back = new EventEmitter();
   searchControl = new FormControl();
   contacts: User[] = [];
   filteredContacts: Observable<User[]>;

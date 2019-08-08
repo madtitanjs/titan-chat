@@ -3,7 +3,7 @@
     fxLayout="column"
     fxLayoutAlign="start stretch"
 >
-    <app-chat-search></app-chat-search>
+    <app-chat-search (back)="back()"></app-chat-search>
     <app-chat-content fxFlex>
         <app-chat-bubble 
         *ngFor="let m of messages"

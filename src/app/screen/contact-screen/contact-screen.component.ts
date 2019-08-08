@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { User } from 'src/interfaces/user';
 import { UserService } from 'src/app/services/user.service';
+import { MatDialog } from '@angular/material';
+import { SettingsDialogComponent } from 'src/app/dialogs/settings-dialog/settings-dialog.component';
 
 @Component({
   selector: 'app-contact-screen',
@@ -9,15 +11,17 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class ContactScreenComponent implements OnInit {
 
-  contacts: User[] = [];
-  constructor(private userService: UserService) { }
+  @Input() contacts: User[];
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
-    this.getContacts();
   }
 
-  async getContacts() {
-    this.contacts = await this.userService.getContacts().toPromise();
+  openSettings() {
+    this.dialog.open(SettingsDialogComponent, {
+      width: '300px',
+      height: '400px',
+      autoFocus: false
+    });
   }
-
 }

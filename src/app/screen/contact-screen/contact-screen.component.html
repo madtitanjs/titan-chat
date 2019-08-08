@@ -1,14 +1,10 @@
 <div fxLayout="column" class="contact">
     <div style="margin: 10px 10px;">
-        <app-contact-actions></app-contact-actions>
+        <app-contact-actions (settings)="openSettings()"></app-contact-actions>
     </div>
-    <div fxFlex style="overflow-y: auto; padding: 0 5px">
+    <div fxFlex style="overflow-y: auto; padding: 0 5px; margin-top: 20px">
         <ng-container *ngFor="let contact of contacts">
             <app-contact-user [user]="contact"></app-contact-user>
         </ng-container>
     </div>
 </div>
-
-<a mat-mini-fab color="primary" class="compose" routerLink="/c/new">
-    <mat-icon>message</mat-icon>
-</a>

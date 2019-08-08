@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { ChatScreenComponent } from './chat-screen/chat-screen.component';
 import { NewChatScreenComponent } from './new-chat-screen/new-chat-screen.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
       }
     ]
   },
+  { path: '**', component: NotFoundComponent }
 
 ];
 

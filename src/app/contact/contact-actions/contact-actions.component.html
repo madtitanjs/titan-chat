@@ -1,4 +1,16 @@
 <div fxLayout="row" fxLayoutAlign="space-between center">
-    <h2>Messages</h2>
-    <img [src]="userImg">
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+        <img [src]="userImg">
+        <h2>Messages</h2>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+
+        <button mat-icon-button (click)="settings.emit()">
+            <mat-icon>settings</mat-icon>
+        </button>
+        <a mat-icon-button  color="primary" routerLink="/c/new">
+            <mat-icon>message</mat-icon>
+        </a>
+    </div>
 </div>

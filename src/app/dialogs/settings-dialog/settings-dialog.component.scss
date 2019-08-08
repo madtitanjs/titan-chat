@@ -1,0 +1,14 @@
+.settings-header {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    .title {
+        margin: auto;
+        font-weight: 700;
+    }
+    .close {
+        position: absolute;
+        right: 0;
+    }
+}

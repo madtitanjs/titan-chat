@@ -1,0 +1,32 @@
+<div fxLayout="column" style="height: 100%">
+    <div class="settings-header">
+        <span class="title">Settings</span>
+        <button class="close" mat-button color='primary' (click)="close()">Done</button>
+    </div>
+    <div fxFlex fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="10px">
+        <mat-divider></mat-divider>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <b>Account:</b> <span>Juan Carlos</span>
+        </div>
+        <mat-divider></mat-divider>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <b>Show Active:</b>
+            <mat-slide-toggle color='primary'></mat-slide-toggle>
+        </div>
+        <mat-divider></mat-divider>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <b>Notifications:</b>
+            <mat-slide-toggle color='primary'></mat-slide-toggle>
+        </div>
+        <mat-divider></mat-divider>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <b>Sounds:</b>
+            <mat-slide-toggle color='primary'></mat-slide-toggle>
+        </div>
+        <mat-divider></mat-divider>
+        <div fxFlex></div>
+        <button mat-flat-button color='warn'>
+            Logout
+        </button>
+    </div>
+</div>

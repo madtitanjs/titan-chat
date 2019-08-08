@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { User } from 'src/interfaces/user';
 import { UserService } from 'src/app/services/user.service';
 import { mockUserId } from 'src/configuration/constants';
@@ -10,7 +10,7 @@ import { mockUserId } from 'src/configuration/constants';
 })
 export class ContactActionsComponent implements OnInit {
   userImg: string;
-
+  @Output() settings = new EventEmitter();
   constructor(private userService: UserService) { }
 
   ngOnInit() {

@@ -5,6 +5,7 @@ import { Observable, BehaviorSubject } from 'rxjs';
 import { ChatMessage } from 'src/interfaces/chatmessage';
 import { ActivatedRoute } from '@angular/router';
 import { ChannelService } from 'src/app/services/channel.service';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-new-chat-screen',
   templateUrl: './new-chat-screen.component.html',
@@ -18,13 +19,16 @@ export class NewChatScreenComponent implements OnInit {
   constructor(
     private channelService: ChannelService,
     private chatData: ChatDataService, 
-    private acr: ActivatedRoute) { }
+    private loc: Location) { }
 
   ngOnInit() {
 console.log('new')
     
   }
 
+  back() {
+    this.loc.back();
+  }
   async updateChannel(channel_id: string) {
     var channel = await this.channelService.getChannelDetailsByChannelId(channel_id).toPromise();
     this.channelTitle = channel.channel_name;
